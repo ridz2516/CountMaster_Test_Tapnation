@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8e448dd9e48e04d9035ab0fb544a0f, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  PlayerVars:
+    StartPlayerAmount: 1
+    PlayerCharacter: {fileID: 7940691545994484839, guid: 9255e2de9cbc1cf42b805477365e73cb, type: 3}
+    PlayerSettings:
+      MaxDistance: 1.8
+      Speed: 3
+      WallDetection:
+        serializedVersion: 2
+        m_Bits: 64
+      WallDetectDistance: 0.25
+  InputVars:
+    DragSensitivity: 0.001
