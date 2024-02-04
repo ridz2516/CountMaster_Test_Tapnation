@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using Zenject;
 
-public class GamePlayInputPresenter : IInitializable, IDisposable, IFixedTickable
+public class GamePlayInputPresenter : IInitializable, IDisposable, IFixedTickable,ILateTickable,ITickable
 {
     #region Data
 
@@ -65,10 +65,6 @@ public class GamePlayInputPresenter : IInitializable, IDisposable, IFixedTickabl
     public void FixedTick()
     {
 
-        if (_IsInputDown)
-        {
-            SetInput(Input.mousePosition);
-        }
     }
 
     public void SetInput(Vector3 _MousePos)
@@ -79,5 +75,16 @@ public class GamePlayInputPresenter : IInitializable, IDisposable, IFixedTickabl
         m_LastInputPosNormalized = _MousePos;
     }
 
-    
+    public void LateTick()
+    {
+
+    }
+
+    public void Tick()
+    {
+        if (_IsInputDown)
+        {
+            SetInput(Input.mousePosition);
+        }
+    }
 }

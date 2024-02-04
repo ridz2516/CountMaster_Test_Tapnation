@@ -3,6 +3,8 @@ using Zenject;
 
 public class GameInstaller : MonoInstaller
 {
+    const string GAME_KEY = "1b4793e17bc9132d313d08881588cd65";
+    const string SECRET_KEY = "";
     public override void InstallBindings()
     {
         installPlayer();
@@ -10,6 +12,7 @@ public class GameInstaller : MonoInstaller
         installGameManager();
 
         GameSignalInstaller.Install(Container);
+        GameAnalyticsSDK.GameAnalytics.Initialize();
     }
 
     private void installPlayer()
