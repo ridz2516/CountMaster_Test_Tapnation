@@ -6,7 +6,6 @@ using Zenject;
 public class Screen_LevelFinish : MonoBehaviour, IMenuView
 {
     public Button RestartButton;
-    public TextMeshProUGUI DistanceText;
 
     public void Hide()
     {

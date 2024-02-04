@@ -24,10 +24,14 @@ public class GameInstaller : MonoInstaller
     {
         Container.BindInterfacesAndSelfTo<LevelStartPresenter>().AsSingle();
         Container.BindInterfacesAndSelfTo<GamePlayInputPresenter>().AsSingle();
+        Container.BindInterfacesAndSelfTo<LevelFinishPresenter>().AsSingle();
+        Container.BindInterfacesAndSelfTo<LevelCompletePresenter>().AsSingle();
     }
 
     private void installGameManager()
     {
         Container.Bind<GameManager>().AsSingle();
+        Container.Bind<EnemyBaseDelegate>().AsSingle();
+        Container.Bind<StorageManager>().AsSingle();
     }
 }

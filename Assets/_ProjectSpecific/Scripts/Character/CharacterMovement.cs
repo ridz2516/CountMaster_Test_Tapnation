@@ -8,7 +8,7 @@ public class CharacterMovement : MonoBehaviour
 
     [SerializeField] private float  _Speed = 1f;
 
-    [SerializeField] private Transform _Target;
+    private Transform _Target;
     private float _CurrentSpeed = 0;
 
     #endregion Data

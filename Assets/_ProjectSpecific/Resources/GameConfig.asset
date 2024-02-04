@@ -14,13 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerVars:
     StartPlayerAmount: 1
-    PlayerCharacter: {fileID: 7940691545994484839, guid: 9255e2de9cbc1cf42b805477365e73cb, type: 3}
+    PlayerCharacter: {fileID: 4766431831375989972, guid: e14e248a9b9683d4aa31ea956b39551f, type: 3}
     PlayerSettings:
       MaxDistance: 1.8
-      Speed: 3
+      Speed: 2
       WallDetection:
         serializedVersion: 2
         m_Bits: 64
       WallDetectDistance: 0.25
   InputVars:
     DragSensitivity: 0.001
+  ObstacleConfig:
+    PositiveColor: {r: 0.27185112, g: 0.90588236, b: 0.07450979, a: 1}
+    NegativeColor: {r: 0.8980393, g: 0.27058825, b: 0.3254902, a: 1}
+    PositiveTextMat: {fileID: 2100000, guid: e3df99f3ddd4df940bff8bfc75dd86f0, type: 2}
+    NegativeTextMat: {fileID: 2100000, guid: d4b0da2f111e07d46a6bd05a1adcf05b, type: 2}
+  CharacterConfig:
+    CharacterExplosionBlue: {fileID: 8958425158749739502, guid: 53a6b90f2bb8af8478915a8f324812fc, type: 3}
+    CharacterExplosionRed: {fileID: 3491886776889242822, guid: 84ee7428ca9586b47a08ed06cb7831b1, type: 3}
+    EnemyCharacter: {fileID: 4766431831375989972, guid: fee30b6df44f2bf44b58d467b465ccad, type: 3}
